@@ -46,7 +46,7 @@ if [ -n "$report_message" ]; then
     curl -X POST -H "Content-Type: application/json" -d '{
         "content": "<@'$DISCORD_USER_ID'>",
         "embeds": [{
-            "title": "**Warning @'"$(hostname)"'**",
+            "title": "**[Monitoring] Warning @'"$(hostname)"'**",
             "description": "'"$report_message"'",
             "color": "16732439"
             }]
