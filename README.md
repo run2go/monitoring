@@ -6,7 +6,7 @@ Prepared for discord & slack
 The discord/slack Webhook can be defined at the top of the shell script. The former allows to define a user ID, feel free to use "@here" instead.
 
 ## Cronjob Usage
-- Make it executable using `chmod +x backup.sh`
+- Make it executable using `chmod +x monitoring.sh`
 - Open crontab using `crontab -e`
 - Then add a new entry with your preferred time schedule `*/10 * * * * /path/to/monitoring.sh`
 <br>
