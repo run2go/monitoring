@@ -44,6 +44,6 @@ fi
 # Send report message if any threshold is exceeded
 if [ -n "$report_message" ]; then
     curl -X POST -H "Content-Type: application/json" -d '{
-    "text": "*Warning @'"$(hostname)"'* @here\n\n'"$report_message"'",
+    "text": "*[Monitoring] Warning @'"$(hostname)"'* @here\n\n'"$report_message"'",
     }' https://hooks.slack.com/services/$SLACK_WORKSPACE/$SLACK_CHANNEL/$SLACK_TOKEN
 fi
